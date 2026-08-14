@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T-Bites — Project Hub</title>
+<meta name="description" content="T-Bites builds practical tools for gamers, miners and prediction markets. Open source projects, built in public.">
+<style>
+:root { --bg:#0f1115; --card:#171a21; --border:#262b36; --text:#e6e9ef; --muted:#8b93a3; --accent:#4f8cff; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,sans-serif; min-height:100vh; }
+.wrap { max-width:860px; margin:0 auto; padding:48px 24px; }
+header { margin-bottom:40px; }
+h1 { font-size:2rem; margin-bottom:8px; }
+.tagline { color:var(--muted); font-size:1.05rem; margin-bottom:16px; }
+.badges { display:flex; gap:8px; flex-wrap:wrap; }
+.badge { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:4px 14px; font-size:.8rem; color:var(--muted); }
+h2 { font-size:1.15rem; margin:32px 0 16px; color:var(--text); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:16px; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; transition:border-color .2s, transform .2s; text-decoration:none; color:inherit; display:block; }
+.card:hover { border-color:var(--accent); transform:translateY(-2px); }
+.card h3 { font-size:1.1rem; margin-bottom:8px; color:var(--accent); }
+.card p { color:var(--muted); font-size:.92rem; line-height:1.5; margin-bottom:12px; min-height:44px; }
+.card .meta { display:flex; gap:12px; font-size:.78rem; color:var(--muted); }
+.card .go { font-size:.82rem; color:var(--accent); margin-top:10px; display:inline-block; }
+footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); font-size:.82rem; display:flex; gap:20px; justify-content:space-between; flex-wrap:wrap; }
+footer a { color:var(--muted); text-decoration:none; }
+footer a:hover { color:var(--accent); }
+@media (max-width:600px){ .grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>👋 T-Bites</h1>
+  <p class="tagline">Practical tools, built in public. Gaming · Mining · Prediction markets.</p>
+  <div class="badges">
+    <span class="badge">🛠 Open Source</span>
+    <span class="badge">🧪 Experiment-driven</span>
+    <span class="badge">⚡ Automation-first</span>
+  </div>
+</header>
+
+<h2>🛠 Projects</h2>
+<div class="grid">
+  <a class="card" href="https://t-bites.github.io/caniplay/">
+    <h3>CanIPlay</h3>
+    <p>Check if your PC can run any game — enter your GPU, CPU &amp; RAM for an instant compatibility verdict. 130,000+ games tracked.</p>
+    <div class="meta"><span>🌐 Live site</span><span>HTML · JS</span></div>
+    <span class="go">Try it →</span>
+  </a>
+  <a class="card" href="https://github.com/t-bites/minerctl">
+    <h3>Minerctl</h3>
+    <p>CPU mining toolkit: auto-update miners, coin switching, socks5 proxy support, and scheduling for hands-off mining operations.</p>
+    <div class="meta"><span>⚙️ Shell</span><span>🔒 Code on GitHub</span></div>
+    <span class="go">View repo →</span>
+  </a>
+  <a class="card" href="https://github.com/t-bites/polymarket-paper-trader">
+    <h3>Polymarket Paper Trader</h3>
+    <p>Zero-capital prediction market trading engine. Simulates strategies on real Polymarket data before risking real money.</p>
+    <div class="meta"><span>📈 Python</span><span>🔬 Research</span></div>
+    <span class="go">View repo →</span>
+  </a>
+  <a class="card" href="https://github.com/t-bites/regwatch">
+    <h3>RegWatch</h3>
+    <p>Regulation tracking micro-tool. Coming soon — monitoring regulatory changes that matter.</p>
+    <div class="meta"><span>📋 In progress</span></div>
+    <span class="go">View repo →</span>
+  </a>
+</div>
+
+<footer>
+  <span>© 2026 T-Bites</span>
+  <span>
+    <a href="https://github.com/t-bites">GitHub</a> ·
+    <a href="https://x.com/tbites_dev">X / Twitter</a>
+  </span>
+</footer>
+</div>
+</body>
+</html>
